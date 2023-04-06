@@ -43,15 +43,14 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 
 ### What I learned
 
  - 下拉式選單
-display: none; 讓content先消失。
-position: absolute; 讓content不會推移，保持在原本的位置。
-white-space: nowrap; 讓文字空白的部分不會因為width:auto的關係向下推移。
-之後再透過hover讓鼠標觸碰的位置顯現content。
+  -display: none; 讓content先消失。
+  -position: absolute; 讓content不會推移，保持在原本的位置。
+  -white-space: nowrap; 讓文字空白的部分不會因為width:auto的關係向下推移。
+  -之後再透過hover讓鼠標觸碰的位置顯現content。
 
 ```css
 .dropdown--content {
@@ -66,7 +65,7 @@ white-space: nowrap; 讓文字空白的部分不會因為width:auto的關係向�
 ```
 
  - 圖片置中
-在圖片外面的ul用display:flex讓整個上下左右皆置中，就不會受到圖片長寬不同而影響位置
+  -在圖片外面的ul用display:flex讓整個上下左右皆置中，就不會受到圖片長寬不同而影響位置
 ```css
 .section--logo ul {
     display: flex;
