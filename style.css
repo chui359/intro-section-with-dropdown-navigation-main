@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.nav--li {
+    display: flex;
+    margin-left: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav ul .nav--click {
+    cursor: pointer;
+}
+
+.nav--Careers {
+    cursor: default;
+}
+
+.btn--register {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 1em;
+}
+
+.section--dec {
+    margin-top: 50px;
+}
+
+.section--dec p{
+    margin-top: 30px;
+    width: 400px;
+    color: hsl(0, 0%, 41%);
+    line-height:1.5;
+}
+
+.section--dec button{
+    margin-top: 30px;
+    padding: 13px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    font-weight: 700;
+    width: 130px;
+    cursor: pointer;
+}
+
+.section--logo {
+    margin-top: 120px;
+}
+
+.section--logo ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section--logo ul img {
+    margin-right: 30px;
+}
+
+.container--right img{
+    margin-left: 200px;
+    width: 400px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.attribution p{
+    margin: 30px;
+    font-size:18px;
+}
+
+
+/* button hover */
+.dropdown--content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: auto;
+    white-space: nowrap;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dropdown--content a {
+    color: black;
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown--content a img{
+ text-align: center;
+ margin-right: 7px;
+}
+
+.arrow--up {
+    display: none;
+}
+
+.nav--click:hover .dropdown--content {
+    display: block;
+}
+
+.nav--click:hover .arrow--down {
+    display: none;
+}
+.nav--click:hover .arrow--up {
+    display: inline;
+}
