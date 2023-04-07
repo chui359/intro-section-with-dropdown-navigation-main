@@ -6,16 +6,39 @@
     font-family: 'Epilogue', sans-serif;
 }
 
-nav {
+header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin-top: 20px;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin: 0 20px;
 }
 
-nav ul {
+.nav--mobile {
+    display: none;
+}
+
+.nav--left {
     display: flex;
-    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav--desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
     margin-left: 10px;
     margin-right: 10px;
     align-items: center;
@@ -26,7 +49,11 @@ nav ul {
     margin-left: 30px;
 }
 
-nav ul li {
+.nav--login {
+    margin-right: 20px;
+}
+
+header ul li {
     list-style: none;
     margin-left: 30px;
 }
@@ -50,6 +77,11 @@ nav ul .nav--click {
     justify-content: center;
     margin: 10px auto;
     padding: 1em;
+    flex-direction: row-reverse;
+}
+
+.hero-mobile {
+    display: none;
 }
 
 .section--dec {
@@ -141,4 +173,117 @@ h1 {
 }
 .nav--click:hover .arrow--up {
     display: inline;
+}
+
+/* sidenav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: hsl(0, 0%, 98%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidenav--nav ul li {
+    margin: 20px;
+    list-style: none;
+  }
+
+  .sidearrow--up {
+    display: none;
+  }
+
+  .sidenav--a {
+    display: none;
+  }
+
+  .sidenav--click {
+    cursor: pointer;
+  }
+
+  .sidenav--login {
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .sidenav--register {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: inline;
+    }
+
+    .section--dec {
+        text-align: center;
+    }
+
+    .section--dec p{
+        width: auto;
+    }
+
+    .section--logo {
+        margin-top: 50px;
+    }
+
+    .container--right img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .hero-mobile {
+        display: inline;
+    }
+
+    .hero-desktop {
+        display: none;
+    }
+
+    .nav--desktop {
+        display: none;
+    }
+
+    .nav--login {
+        display: none;
+    }
+
+    .nav--mobile {
+        display: inline;
+        margin: 0 20px;
+        cursor: pointer;
+    }
 }

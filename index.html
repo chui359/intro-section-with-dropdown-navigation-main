@@ -15,11 +15,13 @@
   </style>
 </head>
 <body>
-
+  <script src="./script.js"></script>
+  
   <header>
-    <nav>
+    <div class="nav--left">
+    <img class="logo" src="./images/logo.svg" alt="">
+    <nav class="nav--desktop">
       <ul>
-        <img src="./images/logo.svg" alt="">
         <div class="nav--li">
           <div class="nav--click">
             <li>Features 
@@ -53,19 +55,29 @@
 
         </div>
       </ul>
-      
-      <ul>
-        <div class="nav--click">
-          <li>Login</li>
-        </div>
-        <div class="nav--click">
-          <li class="btn--register">Register</li>
-        </div>
-      </ul>
     </nav>
+  </div>
+
+  <ul class="nav--login">
+    <div class="nav--click">
+      <li>Login</li>
+    </div>
+    <div class="nav--click">
+      <li class="btn--register">Register</li>
+    </div>
+  </ul>
+    
+  <nav class="nav--mobile">
+    <img onclick="openNav()" src="./images/icon-menu.svg" alt="">
+  </nav>
   </header>
 
   <div class="container">
+
+    <div class="container--right">
+      <img class="hero-desktop" src="./images/image-hero-desktop.png" alt="">
+      <img class="hero-mobile" src="./images/image-hero-mobile.png" alt="">
+    </div>
 
   <div class="conatiner--left">
     <section class="section--dec">
@@ -90,10 +102,6 @@
     </section>
   </div>
 
-  <div class="container--right">
-    <img src="./images/image-hero-desktop.png" alt="">
-  </div>
-
   </div>
 
   <div class="attribution">
@@ -101,6 +109,58 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">YUN CHENG</a>.
     </p>
+
+  </div>
+
+
+  <!-- sidenav -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <nav class="sidenav--nav">
+        <ul>
+          <div>
+            <div class="sidenav--click" onclick="showFeatures()">
+              <li>Features 
+                <img class="sidearrow--down" id="features--down" src="./images/icon-arrow-down.svg" alt="">
+                <img class="sidearrow--up" id="features--up" src="./images/icon-arrow-up.svg" alt="">
+              </li>
+              <div class="sidenav--a" id="features">
+                <a href="#"><img src="./images/icon-todo.svg" alt=""> Todo List</a>
+                <a href="#"><img src="./images/icon-calendar.svg" alt=""> Calendar</a>
+                <a href="#"><img src="./images/icon-reminders.svg" alt=""> Reminders</a>
+                <a href="#"><img src="./images/icon-planning.svg" alt=""> Planning</a>
+              </div>
+            </div>
+            <div class="sidenav--click" onclick="showCompany()">
+              <li>Company
+                <img class="sidearrow--down" id="company--down" src="./images/icon-arrow-down.svg" alt="">
+                <img class="sidearrow--up" id="company--up" src="./images/icon-arrow-up.svg" alt="">
+              </li>
+              <div class="sidenav--a" id="company">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>
+            <div class="nav--Careers">
+              <li>Careers</li>
+            </div>
+            <div class="nav--click">
+              <li>About</li>
+            </div>
+  
+          </div>
+        </ul>
+
+        <ul>
+          <li class="sidenav--login">Login</li>
+          <li class="sidenav--register">Register</li>
+        </ul>
+
+      </nav>
+
+
 
   </div>
 </body>
